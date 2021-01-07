@@ -23,7 +23,6 @@ public class ProductService {
 		List<Product> lstProduct = productRepository.findAll();
 
 		return lstProduct.stream().map(x -> new ProductDTO(x)).collect(Collectors.toList());
-
 	}
 
 }
